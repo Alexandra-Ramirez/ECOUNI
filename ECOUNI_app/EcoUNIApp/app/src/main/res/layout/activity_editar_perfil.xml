@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".presentation.view.EditarPerfilActivity">
+
+    <LinearLayout
+        android:background="@color/menuPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:onClick="cancel"
+            android:contentDescription="@string/close"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/btn_close"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="48dp"
+            android:layout_weight="0"
+            app:srcCompat="@drawable/ic_close_white" />
+        <TextView
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_weight="1"/>
+        <ImageView
+            android:contentDescription="@string/editar_perfil"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/imageView"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_weight="0"
+            app:srcCompat="@drawable/ic_edit_black_24dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/editar_perfil"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_weight="1"/>
+        <ImageView
+            android:onClick="save"
+            android:contentDescription="@string/check"
+            android:id="@+id/btn_check"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="48dp"
+            android:layout_weight="0"
+            android:layout_gravity="center_vertical"
+            app:srcCompat="@drawable/ic_check_white"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="@color/fondoFoto"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:contentDescription="@string/foto"
+                    android:layout_marginTop="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/foto"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"/>
+
+                <Button
+                    android:onClick="pickFoto"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/btn_cambiar"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:background="@drawable/black_rounded_lines"
+                    android:text="@string/cambiar_foto"
+                    android:drawableStart="@drawable/ic_photo_camera_black_24dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="@string/nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:id="@+id/tf_nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:background="@drawable/background_rosa"
+                    tools:text="Luis Gomez"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="@string/facultad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:id="@+id/tf_facultad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:background="@drawable/background_rosa"
+                    tools:text="FC"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="@string/escribe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:id="@+id/tf_escribe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:background="@drawable/background_rosa"
+                    tools:text="Me gusta cuidar el medio ambiente"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="@string/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:id="@+id/tf_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_rosa"
+                    android:inputType="textEmailAddress"
+                    android:padding="8dp"
+                    tools:text="lgomez@uni.pe" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="@string/celular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:id="@+id/tf_celular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_rosa"
+                    android:inputType="phone"
+                    android:padding="8dp"
+                    tools:text="957874657" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="@string/cumplea_os"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:id="@+id/tf_cumple"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_rosa"
+                    android:inputType="date"
+                    android:padding="8dp"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:onClick="datepick"
+                    tools:text="09/03/96" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

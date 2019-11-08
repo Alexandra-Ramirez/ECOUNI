@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#1E9238</color>
+    <color name="colorMenu">#C6DE94</color>
+
+    <color name="menuPerfil">#EF5252</color>
+    <color name="menuReciclar">#E2AA19</color>
+    <color name="menuPremios">#289A78</color>
+    <color name="menuPuntos">#A14D80</color>
+    <color name="menuFeedback">#9AB436</color>
+    <color name="menuInfo">#59A14D</color>
+
+    <color name="fondoFoto">#E38A8A</color>
+    <color name="fondoGris">#CFCCCC</color>
+
+    <color name="primaryPerfil">#EF5252</color>
+    <color name="primaryDarkPerfil">#b03737</color>
+
+    <color name="rosaclaro">#F3E9E9</color>
+
+    <color name="color1">#C4C4C4</color>
+    <color name="color2">#4FBE68</color>
+    <color name="color3">#DB4444</color>
+    <color name="color4">#f9df9f</color>
+    <color name="color5">#b5f6f4</color>
+    <color name="color6">#b5baf4</color>
+    <color name="color7">#3dbaf4</color>
+    <color name="color8">#efef34</color>
+    <color name="color9">#e2d1fc</color>
+    <color name="color10">#e2923d</color>
+
+    <color name="verdetranslucido">#AA28D864</color>
+
+</resources>
